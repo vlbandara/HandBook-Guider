@@ -37,7 +37,7 @@ public class ReferenceDocsLoader {
 
         log.info("Current count of the Vector Store: {}", count);
         if (count == 0) {
-            log.info("Loading Spring Boot Reference PDF into Vector Store");
+            log.info("Loading Handbook PDF into Vector Store");
             var config = PdfDocumentReaderConfig.builder()
                     .withPageExtractedTextFormatter(new ExtractedTextFormatter.Builder().withNumberOfBottomTextLinesToDelete(0)
                             .withNumberOfTopPagesToSkipBeforeDelete(0)
